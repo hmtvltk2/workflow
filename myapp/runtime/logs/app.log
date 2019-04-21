@@ -1,0 +1,300 @@
+2018-12-28 16:30:00 [::1][-][d2fu21k6pd46spnet0u4pds5vd][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: The file or directory to be published does not exist: D:\Projects\Yii\myapp\vendor\bower/jquery/dist in D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\AssetManager.php:456
+Stack trace:
+#0 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\AssetBundle.php(185): yii\web\AssetManager->publish('D:\\Projects\\Yii...', Array)
+#1 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\AssetManager.php(268): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\AssetManager.php(239): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\View.php(286): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\View.php(291): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\AssetBundle.php(125): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 D:\Projects\Yii\myapp\modules\app\example\views\layouts\main.php(13): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\View.php(336): require('D:\\Projects\\Yii...')
+#9 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Projects\\Yii...', Array)
+#10 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('D:\\Projects\\Yii...', Array, Object(app\modules\app\example\controllers\SiteController))
+#11 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#12 D:\Projects\Yii\myapp\modules\app\example\controllers\SiteController.php(66): yii\base\Controller->render('index')
+#13 [internal function]: app\modules\app\example\controllers\SiteController->actionIndex()
+#14 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#16 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#17 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#18 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\Projects\Yii\myapp\web\index.php(12): yii\base\Application->run()
+#20 {main}
+2018-12-28 16:30:00 [::1][-][d2fu21k6pd46spnet0u4pds5vd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd2fu21k6pd46spnet0u4pds5vd'
+    '_csrf' => 'eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h\";}'
+    'COOKIE_SUPPORT' => 'true'
+    'Idea-bb817927' => '6d28fce8-a037-4b88-bde6-cd5dfb3284cd'
+    'GUEST_LANGUAGE_ID' => 'en_US'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\Projects\\Yii\\myapp\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52469'
+    'SERVER_SOFTWARE' => 'PHP 7.2.8 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\Projects\\Yii\\myapp\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=d2fu21k6pd46spnet0u4pds5vd; _csrf=eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h%22%3B%7D; COOKIE_SUPPORT=true; Idea-bb817927=6d28fce8-a037-4b88-bde6-cd5dfb3284cd; GUEST_LANGUAGE_ID=en_US'
+    'REQUEST_TIME_FLOAT' => 1546014599.7523
+    'REQUEST_TIME' => 1546014599
+]
+2018-12-28 16:34:06 [::1][-][d2fu21k6pd46spnet0u4pds5vd][error][Error] Error: Class 'app\assets\AppAsset' not found in D:\Projects\Yii\myapp\modules\app\example\views\layouts\main.php:13
+Stack trace:
+#0 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Projects\\Yii...', Array)
+#2 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('D:\\Projects\\Yii...', Array, Object(app\modules\app\example\controllers\SiteController))
+#3 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#4 D:\Projects\Yii\myapp\modules\app\example\controllers\SiteController.php(66): yii\base\Controller->render('index')
+#5 [internal function]: app\modules\app\example\controllers\SiteController->actionIndex()
+#6 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#9 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#10 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\Projects\Yii\myapp\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2018-12-28 16:34:05 [::1][-][d2fu21k6pd46spnet0u4pds5vd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd2fu21k6pd46spnet0u4pds5vd'
+    '_csrf' => 'eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h\";}'
+    'COOKIE_SUPPORT' => 'true'
+    'Idea-bb817927' => '6d28fce8-a037-4b88-bde6-cd5dfb3284cd'
+    'GUEST_LANGUAGE_ID' => 'en_US'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\Projects\\Yii\\myapp\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52530'
+    'SERVER_SOFTWARE' => 'PHP 7.2.8 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\Projects\\Yii\\myapp\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=d2fu21k6pd46spnet0u4pds5vd; _csrf=eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h%22%3B%7D; COOKIE_SUPPORT=true; Idea-bb817927=6d28fce8-a037-4b88-bde6-cd5dfb3284cd; GUEST_LANGUAGE_ID=en_US'
+    'REQUEST_TIME_FLOAT' => 1546014845.57
+    'REQUEST_TIME' => 1546014845
+]
+2018-12-28 16:34:55 [::1][-][d2fu21k6pd46spnet0u4pds5vd][error][Error] Error: Class 'app\widgets\Alert' not found in D:\Projects\Yii\myapp\modules\app\example\views\layouts\main.php:64
+Stack trace:
+#0 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\View.php(336): require()
+#1 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\View.php(254): yii\base\View->renderPhpFile('D:\\Projects\\Yii...', Array)
+#2 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Controller.php(399): yii\base\View->renderFile('D:\\Projects\\Yii...', Array, Object(app\modules\app\example\controllers\SiteController))
+#3 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Controller.php(385): yii\base\Controller->renderContent('<div class="sit...')
+#4 D:\Projects\Yii\myapp\modules\app\example\controllers\SiteController.php(66): yii\base\Controller->render('index')
+#5 [internal function]: app\modules\app\example\controllers\SiteController->actionIndex()
+#6 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#8 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('', Array)
+#9 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#10 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 D:\Projects\Yii\myapp\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2018-12-28 16:34:54 [::1][-][d2fu21k6pd46spnet0u4pds5vd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd2fu21k6pd46spnet0u4pds5vd'
+    '_csrf' => 'eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h\";}'
+    'COOKIE_SUPPORT' => 'true'
+    'Idea-bb817927' => '6d28fce8-a037-4b88-bde6-cd5dfb3284cd'
+    'GUEST_LANGUAGE_ID' => 'en_US'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\Projects\\Yii\\myapp\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52555'
+    'SERVER_SOFTWARE' => 'PHP 7.2.8 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\Projects\\Yii\\myapp\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=d2fu21k6pd46spnet0u4pds5vd; _csrf=eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h%22%3B%7D; COOKIE_SUPPORT=true; Idea-bb817927=6d28fce8-a037-4b88-bde6-cd5dfb3284cd; GUEST_LANGUAGE_ID=en_US'
+    'REQUEST_TIME_FLOAT' => 1546014894.3571
+    'REQUEST_TIME' => 1546014894
+]
+2018-12-28 16:35:31 [::1][-][d2fu21k6pd46spnet0u4pds5vd][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Projects\Yii\myapp\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Projects\Yii\myapp\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-12-28 16:35:31 [::1][-][d2fu21k6pd46spnet0u4pds5vd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd2fu21k6pd46spnet0u4pds5vd'
+    '_csrf' => 'eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h\";}'
+    'COOKIE_SUPPORT' => 'true'
+    'Idea-bb817927' => '6d28fce8-a037-4b88-bde6-cd5dfb3284cd'
+    'GUEST_LANGUAGE_ID' => 'en_US'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\Projects\\Yii\\myapp\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52604'
+    'SERVER_SOFTWARE' => 'PHP 7.2.8 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\Projects\\Yii\\myapp\\web\\index.php'
+    'PATH_INFO' => '/site/index'
+    'PHP_SELF' => '/index.php/site/index'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=d2fu21k6pd46spnet0u4pds5vd; _csrf=eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h%22%3B%7D; COOKIE_SUPPORT=true; Idea-bb817927=6d28fce8-a037-4b88-bde6-cd5dfb3284cd; GUEST_LANGUAGE_ID=en_US'
+    'REQUEST_TIME_FLOAT' => 1546014931.0655
+    'REQUEST_TIME' => 1546014931
+]
+2018-12-28 16:35:36 [::1][-][d2fu21k6pd46spnet0u4pds5vd][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\Projects\Yii\myapp\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in D:\Projects\Yii\myapp\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\Projects\Yii\myapp\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\Projects\Yii\myapp\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2018-12-28 16:35:35 [::1][-][d2fu21k6pd46spnet0u4pds5vd][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'd2fu21k6pd46spnet0u4pds5vd'
+    '_csrf' => 'eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h\";}'
+    'COOKIE_SUPPORT' => 'true'
+    'Idea-bb817927' => '6d28fce8-a037-4b88-bde6-cd5dfb3284cd'
+    'GUEST_LANGUAGE_ID' => 'en_US'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'D:\\Projects\\Yii\\myapp\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52625'
+    'SERVER_SOFTWARE' => 'PHP 7.2.8 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/site/index'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'D:\\Projects\\Yii\\myapp\\web\\index.php'
+    'PATH_INFO' => '/site/index'
+    'PHP_SELF' => '/index.php/site/index'
+    'HTTP_REFERER' => 'http://localhost:8080/'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=d2fu21k6pd46spnet0u4pds5vd; _csrf=eb5ec2bc9f47260e57503f1ec5b3723e2c2e91113d4158a1e82616aa10ae3167a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22oHYtUHXbduJGBxmNsKF-Efa0VjCqBg9h%22%3B%7D; COOKIE_SUPPORT=true; Idea-bb817927=6d28fce8-a037-4b88-bde6-cd5dfb3284cd; GUEST_LANGUAGE_ID=en_US'
+    'REQUEST_TIME_FLOAT' => 1546014935.4545
+    'REQUEST_TIME' => 1546014935
+]
